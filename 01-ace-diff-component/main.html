@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Comparator</title>
+  <script src="ace-diff.js" type="module"></script>
+</head>
+<body>
+  <text-comparator></text-comparator>
+
+  <script>
+    const comparator = document.querySelector('text-comparator');
+    comparator.text1 = 'Nuevo texto en el lado izquierdo.';
+    comparator.text2 = 'Nuevo texto en el lado derecho.';
+    comparator.updateComparison();
+  </script>
+</body>
+</html>
